@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import ScrollingEffects from "./pages/ScrollingEffects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <main style={{ padding: "20px" }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/scolling-effects" element={<ScrollingEffects/>} />
           </Routes>
         </main>
       </div>
